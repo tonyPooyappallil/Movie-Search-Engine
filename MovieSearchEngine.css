@@ -1,3 +1,9 @@
+body {
+  margin-top: -100px;
+  margin: auto;
+  height: auto;
+  background-color: rgb(233, 233, 233);
+}
 h1,
 h3 {
   font-family: "Courier New", Courier, monospace;
@@ -47,12 +53,39 @@ p {
   text-align: center;
   background-color: rgb(246, 246, 245);
   border-radius: 5px;
+  padding-bottom: 0px;
 }
 #show > :nth-child(2) {
   background-color: rgb(246, 246, 245);
   border: solid rgb(243, 243, 245) 2px;
   border-radius: 5px;
   padding: 50px;
+  padding-bottom: 0px;
+}
+
+#h4DivCont {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#h4Div {
+  font-size: 30px;
+  text-align: end;
+  padding-top: -10px;
+  margin-top: -26px;
+  /* width: 250px;
+  margin-left: 58%; */
+  height: 40px;
+  background-color: rgb(219, 219, 219);
+
+  border: solid rgb(233, 233, 233) 2px;
+  border-radius: 8px;
+}
+#h4Div h4 {
+  padding-top: 0px;
+  margin-top: 0px;
+  /* padding: 5px; */
+  /* background-color: rgb(90, 117, 117); */
 }
 #showGif {
   width: 35%;

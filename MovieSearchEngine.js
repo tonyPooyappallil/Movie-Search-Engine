@@ -11,7 +11,7 @@ async function datas() {
     //console.log(response);
     var data = await response.json();
     if (data.Response == "True") {
-      //console.log(data);
+      console.log(data);
       showMovie(data);
     } else {
       errorAaythuBhai();
@@ -50,9 +50,24 @@ async function datas() {
     p7.innerHTML = `Runtime -  ${data.Runtime}`;
     p8.innerHTML = `Language -  ${data.Language}`;
     p9.innerHTML = `Plot -  ${data.Plot}`;
+    if (data.imdbRating > 8.5) {
+      var h4 = document.createElement("h4");
+      var h4Div = document.createElement("div");
 
-    div1.append(img, p1);
-    div2.append(p2, p3, p4, p5, p6, p7, p8, p9);
+      h4.innerHTML = "Recommended ★";
+      var h4DivCont = document.createElement("div");
+      h4DivCont.id = "h4DivCont";
+      h4Div.id = "h4Div";
+      h4Div.append(h4);
+      h4DivCont.append(h4Div);
+
+      div1.append(img, p1);
+      div2.append(h4DivCont, p2, p3, p4, p5, p6, p7, p8, p9);
+      console.log(div2);
+    } else {
+      div1.append(img, p1);
+      div2.append(p2, p3, p4, p5, p6, p7, p8, p9);
+    }
 
     showDiv.append(div1, div2);
   }
