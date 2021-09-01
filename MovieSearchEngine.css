@@ -5,7 +5,7 @@ h3 {
 #heading,
 #mainContainer,
 #show {
-  width: 80%;
+  width: 70%;
   margin: auto;
   text-align: center;
 }
@@ -32,10 +32,10 @@ p {
 }
 
 #show {
-  margin-top: 50px;
+  margin-top: 20px;
   display: grid;
-  grid-template-columns: 20% 70%;
-  grid-gap: 5%;
+  grid-template-columns: 25% 60%;
+  grid-gap: 10%;
   text-align: left;
 }
 #show img {
@@ -53,4 +53,23 @@ p {
   border: solid rgb(243, 243, 245) 2px;
   border-radius: 5px;
   padding: 50px;
+}
+#showGif {
+  width: 35%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#showGif img {
+  width: 100%;
+}
+#errDiv {
+  background-color: antiquewhite;
+  padding: 10%;
+  padding-top: 3%;
+  border-radius: 15px;
+}
+#errDiv h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
