@@ -41,15 +41,15 @@ async function datas() {
     let p8 = document.createElement("p");
     let p9 = document.createElement("p");
 
-    p1.innerHTML = `Title -  ${data.Title}`;
-    p2.innerHTML = `Actors -  ${data.Actors}`;
-    p3.innerHTML = `Awards -  ${data.Awards}`;
-    p4.innerHTML = `BoxOffice -  ${data.BoxOffice}`;
-    p5.innerHTML = `Genre -  ${data.Genre}`;
-    p6.innerHTML = `imdbRating -  ${data.imdbRating}`;
-    p7.innerHTML = `Runtime -  ${data.Runtime}`;
-    p8.innerHTML = `Language -  ${data.Language}`;
-    p9.innerHTML = `Plot -  ${data.Plot}`;
+    p1.innerHTML = `${data.Title} - ${data.Year}`;
+    p2.innerHTML = ` <span>Actors</span>  -  ${data.Actors}`;
+    p3.innerHTML = `<span>Awards</span> -  ${data.Awards}`;
+    p4.innerHTML = `<span>BoxOffice </span>-  ${data.BoxOffice}`;
+    p5.innerHTML = `<span>Genre</span> -  ${data.Genre}`;
+    p6.innerHTML = `<span>imdbRating</span> -  ${data.imdbRating}`;
+    p7.innerHTML = `<span>Runtime</span> -  ${data.Runtime}`;
+    p8.innerHTML = `<span>Language</span> -  ${data.Language}`;
+    p9.innerHTML = `<span>Plot</span> -  ${data.Plot}`;
     if (data.imdbRating > 8.5) {
       var h4 = document.createElement("h4");
       var h4Div = document.createElement("div");

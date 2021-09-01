@@ -2,11 +2,12 @@ body {
   margin-top: -100px;
   margin: auto;
   height: auto;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(6, 13, 23);
 }
 h1,
 h3 {
   font-family: "Courier New", Courier, monospace;
+  color: white;
 }
 #heading,
 #mainContainer,
@@ -51,18 +52,32 @@ p {
 #show > :nth-child(1) {
   border: solid rgb(243, 243, 245) 2px;
   text-align: center;
-  background-color: rgb(246, 246, 245);
+  background-color: rgb(190, 190, 185);
   border-radius: 5px;
   padding-bottom: 0px;
 }
+
+#show > :nth-child(1) p {
+  color: rgb(0, 0, 65);
+  font-weight: 600;
+  font-size: 25px;
+}
 #show > :nth-child(2) {
-  background-color: rgb(246, 246, 245);
+  background-color: rgb(190, 190, 185);
   border: solid rgb(243, 243, 245) 2px;
   border-radius: 5px;
   padding: 50px;
   padding-bottom: 0px;
 }
-
+#show > :nth-child(2) span {
+  font-size: 22px;
+  font-weight: 600;
+}
+#show > :nth-child(2) p {
+  background-color: rgb(236, 232, 232);
+  border-radius: 10px;
+  padding: 3px;
+}
 #h4DivCont {
   display: flex;
   justify-content: flex-end;
