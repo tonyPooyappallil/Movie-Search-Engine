@@ -1,0 +1,56 @@
+h1,
+h3 {
+  font-family: "Courier New", Courier, monospace;
+}
+#heading,
+#mainContainer,
+#show {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#city {
+  height: 30px;
+  border: solid rgb(98, 98, 228) 2px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+#city ~ button {
+  height: 30px;
+  border: solid rgb(98, 98, 228) 2px;
+  border-radius: 5px;
+  background-color: rgb(70, 70, 190);
+  color: white;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+p {
+  color: rgb(41, 6, 6);
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+#show {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-gap: 5%;
+  text-align: left;
+}
+#show img {
+  width: 100%;
+  margin-top: 50px;
+}
+#show > :nth-child(1) {
+  border: solid rgb(243, 243, 245) 2px;
+  text-align: center;
+  background-color: rgb(246, 246, 245);
+  border-radius: 5px;
+}
+#show > :nth-child(2) {
+  background-color: rgb(246, 246, 245);
+  border: solid rgb(243, 243, 245) 2px;
+  border-radius: 5px;
+  padding: 50px;
+}
